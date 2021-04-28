@@ -1,12 +1,17 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
+import ClassBasedApp from "./ClassBasedApp";
+import HookBasedApp from "./HookBasedApp";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <StrictMode>
-    <App />
+    <h2>Class Based Component</h2>
+    <ClassBasedApp />
+    <hr />
+    <h2>Functional Based Component</h2>
+    <HookBasedApp />
   </StrictMode>,
   rootElement
 );
